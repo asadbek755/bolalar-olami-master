@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.2",
+    "nuxt-swiper": "^1.2.2",
+    "pinia": "^2.1.7"
+  },
+  "devDependencies": {
+    "@nuxtjs/i18n": "^8.1.1",
+    "@types/bootstrap": "^5.2.10",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "mdb-ui-kit": "^7.1.0",
+    "nuxt": "^3.10.3",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "vue": "^3.4.19",
+    "vue-router": "^4.3.0"
+  }
+}

@@ -1,0 +1,94 @@
+.media {
+    margin-bottom: 20px;
+
+    &__title {
+        color: #121212;
+        font-family: "BBC Reith Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 2px 0 0 10px;
+        border-left: 2px solid #F7931E;
+        opacity: 0.9;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 11px;
+    }
+
+    .card-img-overlay {
+        background-image: url(/images/rectangle.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    &__cards {
+        height: 205px;
+        position: relative;
+    }
+
+    &__card-title {
+        position: absolute;
+        left: 9.61px;
+        bottom: 16px;
+        font-family: "BBC Reith Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        max-width: 310px;
+        margin-bottom: 0;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width:376px) {
+    .media {
+        margin-bottom: 20px;
+
+        &__title {
+            font-size: 13.639px;
+        }
+
+        &__wrapper {
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        &__card-title {
+            left: 9.61px;
+            bottom: 10px;
+            font-size: 13.869px;
+            max-width: 306px;
+        }
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .media {
+        margin-bottom: 27px;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__wrapper {
+            gap: 20px;
+        }
+
+        &__cards {
+            height: 355px;
+        }
+
+        &__card-title {
+            left: 24px;
+            bottom: 16px;
+            font-size: 24.004px;
+            max-width: 496px;
+        }
+    }
+}
